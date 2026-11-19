@@ -5,8 +5,8 @@ export const site = {
   description:
     "Ghanaian engineering and construction firm in Accra, established in 2013. Road and building construction, civil engineering, real estate development, transportation and consultancy.",
   tagline: "Engineering progress. Building the future.",
-  email: "info@workforceengineeringlimited.com",
-  phone: "+233552760549",
+  email: "workforceengineeringlimited@gmail.com",
+  phone: "+233547016610",
   city: "Accra",
   country: "GH",
   foundingYear: "2013",
