@@ -11,7 +11,7 @@ export function Footer() {
         <div className="footer-links"><Link href="/about-us">About us</Link></div>
         <div className="footer-contact"><span>ACCRA, GHANA</span><a href="mailto:info@workorceengineeringlimited.com">info@workorceengineeringlimited.com</a><a href="tel:+233552760549">+233 55 276 0549</a></div>
       </div>
-      <div className="footer-bottom"><span>© {new Date().getFullYear()} Workforce Engineering Limited</span><span>BUILT ON TRUST. MADE TO ENDURE.</span></div>
+      <div className="footer-bottom"><span>© Workforce Engineering Limited</span><span>BUILT ON TRUST. MADE TO ENDURE.</span></div>
     </footer>
   );
 }
