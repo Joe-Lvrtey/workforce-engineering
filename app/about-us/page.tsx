@@ -1,7 +1,12 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Footer } from "../footer";
 
-export const metadata = { title: "About Us | Workforce Engineering Limited", description: "Workforce Engineering Limited is a Ghanaian engineering and construction firm, established in 2013 and headquartered in Accra." };
+export const metadata: Metadata = {
+  title: "About Us",
+  description: "Workforce Engineering Limited is a Ghanaian engineering and construction firm, established in 2013 and headquartered in Accra, delivering road and building construction, civil engineering and consultancy.",
+  alternates: { canonical: "/" },
+};
 
 export default function AboutUs() {
   return <><header className="site-header"><Link className="brand" href="/about-us" aria-label="Workforce Engineering Limited"><img src="/workforce-logo.svg" alt="Workforce Engineering Limited" /></Link><nav aria-label="Main navigation"><span aria-current="page">About us</span><span>What we do</span><span>Contact</span></nav></header>

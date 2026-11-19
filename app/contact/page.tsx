@@ -1,7 +1,16 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+import { openGraphBase, site } from "../site";
 import { Footer } from "../footer";
 
-export const metadata = { title: "Contact | Workforce Engineering Limited", description: "Talk to Workforce Engineering Limited about your construction project in Accra, Ghana." };
+export const metadata: Metadata = {
+  title: "Contact",
+  description: "Talk to Workforce Engineering Limited about your construction project in Accra, Ghana.",
+  alternates: { canonical: "/contact" },
+  openGraph: { ...openGraphBase, url: "/contact", title: `Contact | ${site.name}`, description: "Talk to Workforce Engineering Limited about your construction project in Accra, Ghana." },
+  // Draft page, not linked from the site yet. Remove to allow indexing.
+  robots: { index: false, follow: true },
+};
 
 export default function Contact() {
   return <><header className="site-header"><Link className="brand" href="/"><img src="/workforce-logo.svg" alt="Workforce Engineering Limited" /></Link><nav aria-label="Main navigation"><Link href="/what-we-do">What we do</Link><Link href="/about-us">About us</Link><Link href="/contact">Contact</Link></nav><Link className="header-cta" href="/contact">Start a project <span>↗</span></Link></header>

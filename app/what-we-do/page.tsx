@@ -1,7 +1,16 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+import { openGraphBase, site } from "../site";
 import { Footer } from "../footer";
 
-export const metadata = { title: "What We Do | Workforce Engineering Limited", description: "Construction, renovation and project management services from Workforce Engineering Limited in Accra, Ghana." };
+export const metadata: Metadata = {
+  title: "What We Do",
+  description: "Construction, renovation and project management services from Workforce Engineering Limited in Accra, Ghana.",
+  alternates: { canonical: "/what-we-do" },
+  openGraph: { ...openGraphBase, url: "/what-we-do", title: `What We Do | ${site.name}`, description: "Construction, renovation and project management services from Workforce Engineering Limited in Accra, Ghana." },
+  // Draft page, not linked from the site yet. Remove to allow indexing.
+  robots: { index: false, follow: true },
+};
 
 const offerings = [
   { id: "01", title: "Building construction", lead: "From a clear brief to a confident handover.", body: "We deliver new residential, commercial and institutional buildings with the planning, coordination and on-site care needed to move from concept to completion.", points: ["Residential & multi-unit builds", "Commercial & office construction", "Institutional buildings"] },
