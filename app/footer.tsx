@@ -6,7 +6,7 @@ export function Footer() {
     <footer className="site-footer">
       <div className="footer-main">
         <Link className="brand brand-footer" href="/about-us" aria-label="Workforce Engineering Limited">
-          <Image src="/workforce-logo.svg" alt="Workforce Engineering Limited" width={460} height={112} />
+          <Image src="/workforce-logo.png" alt="Workforce Engineering Limited" width={757} height={220} />
         </Link>
         <p>Building with purpose.<br />Creating what lasts.</p>
         <div className="footer-links"><Link href="/about-us">About us</Link></div>

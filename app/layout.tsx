@@ -52,7 +52,7 @@ const organizationJsonLd = {
   "@id": `${site.url}/#organization`,
   name: site.name,
   url: site.url,
-  logo: `${site.url}/workforce-logo.svg`,
+  logo: `${site.url}/workforce-logo-stacked.png`,
   image: `${site.url}/opengraph-image.jpg`,
   description: site.description,
   slogan: site.tagline,
