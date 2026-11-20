@@ -1,7 +1,12 @@
 import type { MetadataRoute } from "next";
 import { site } from "./site";
 
-// Only indexable pages. /contact and /what-we-do are drafts (noindex) for now.
+// Only indexable pages. /contact is still a draft (noindex).
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [{ url: site.url, lastModified: "2026-11-19", changeFrequency: "monthly", priority: 1 }];
+  const lastModified = "2026-11-20";
+  return [
+    { url: site.url, lastModified, changeFrequency: "monthly", priority: 1 },
+    { url: `${site.url}/what-we-do`, lastModified, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${site.url}/projects`, lastModified, changeFrequency: "monthly", priority: 0.8 },
+  ];
 }

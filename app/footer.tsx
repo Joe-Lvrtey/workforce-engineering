@@ -5,11 +5,11 @@ export function Footer() {
   return (
     <footer className="site-footer">
       <div className="footer-main">
-        <Link className="brand brand-footer" href="/about-us" aria-label="Workforce Engineering Limited">
+        <Link className="brand brand-footer" href="/" aria-label="Workforce Engineering Limited, home">
           <Image src="/workforce-logo.png" alt="Workforce Engineering Limited" width={757} height={220} />
         </Link>
         <p>Building with purpose.<br />Creating what lasts.</p>
-        <div className="footer-links"><Link href="/about-us">About us</Link></div>
+        <div className="footer-links"><Link href="/">About us</Link><Link href="/what-we-do">What we do</Link><Link href="/projects">Projects</Link></div>
         <div className="footer-contact">
           <span>ACCRA, GHANA</span>
           <a href="mailto:workforceengineeringlimited@gmail.com">workforceengineeringlimited@gmail.com</a>
